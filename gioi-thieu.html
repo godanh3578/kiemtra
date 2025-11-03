@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu - Khoa CNTT - Đại học Đại Nam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .header {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 0;
+            border-bottom: 3px solid #cc5500;
+        }
+
+        .header-content {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .logo-text h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .logo-text p {
+            font-size: 16px;
+        }
+
+        .nav {
+            background-color: #ff8800;
+            border-bottom: 2px solid #cc5500;
+        }
+
+        .nav-content {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            background-color: #ff9900;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #ff8800;
+            width: 200px;
+            border: 1px solid #cc5500;
+        }
+
+        .submenu li {
+            width: 100%;
+        }
+
+        .menu li:hover > .submenu {
+            display: block;
+        }
+
+        .main {
+            width: 90%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            color: #ff6600;
+            font-size: 28px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #ff6600;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section h2 {
+            color: #ff6600;
+            font-size: 22px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #ff6600;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .footer {
+            background-color: #ff6600;
+            color: white;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        .footer-content {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ff8800;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            .menu {
+                flex-direction: column;
+            }
+            
+            .menu li {
+                width: 100%;
+            }
+            
+            .submenu {
+                position: static;
+                width: 100%;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Logo">
+                <div class="logo-text">
+                    <h1>Khoa Công nghệ Thông tin</h1>
+                    <p>Đại học Đại Nam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-content">
+            <ul class="menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li>
+                    <a href="#">Đào tạo</a>
+                    <ul class="submenu">
+                        <li><a href="#">Đại học</a></li>
+                        <li><a href="#">Thạc sĩ</a></li>
+                        <li><a href="#">Ngắn hạn</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Sinh viên</a>
+                    <ul class="submenu">
+                        <li><a href="#">Câu lạc bộ</a></li>
+                        <li><a href="#">Học bổng</a></li>
+                        <li><a href="#">Việc làm</a></li>
+                    </ul>
+                </li>
+                <li><a href="tin-tuc.html">Tin tức</a></li>
+                <li><a href="lien-he.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>Giới thiệu về Khoa CNTT</h1>
+        
+        <div class="section">
+            <h2>Lịch sử hình thành</h2>
+            <p>Khoa Công nghệ Thông tin được thành lập năm 2008, là một trong những khoa đầu tiên của Đại học Đại Nam.</p>
+            <p>Qua hơn 15 năm phát triển, khoa đã không ngừng lớn mạnh và khẳng định vị thế trong đào tạo CNTT.</p>
+        </div>
+
+        <div class="section">
+            <h2>Đội ngũ giảng viên</h2>
+            <ul>
+                <li>15 giảng viên cơ hữu</li>
+                <li>10 giảng viên thỉnh giảng</li>
+                <li>5 chuyên gia từ doanh nghiệp</li>
+                <li>100% giảng viên có trình độ thạc sĩ trở lên</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Cơ sở vật chất</h2>
+            <table>
+                <tr>
+                    <th>Phòng học</th>
+                    <th>Số lượng</th>
+                    <th>Trang thiết bị</th>
+                </tr>
+                <tr>
+                    <td>Phòng máy tính</td>
+                    <td>5 phòng</td>
+                    <td>200 máy tính cấu hình cao</td>
+                </tr>
+                <tr>
+                    <td>Phòng thực hành</td>
+                    <td>3 phòng</td>
+                    <td>Thiết bị mạng, IoT, Robotics</td>
+                </tr>
+                <tr>
+                    <td>Thư viện</td>
+                    <td>1 phòng</td>
+                    <td>5000 đầu sách chuyên ngành</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Thành tích nổi bật</h2>
+            <ol>
+                <li>Giải Nhất cuộc thi Lập trình sinh viên 2023</li>
+                <li>Giải Nhì cuộc thi An toàn thông tin 2022</li>
+                <li>Top 10 cuộc thi Robocon 2021</li>
+                <li>100% sinh viên có việc làm sau 6 tháng tốt nghiệp</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Khoa CNTT - Đại học Đại Nam</h3>
+                <p>Địa chỉ: Số 56, Vũ Trọng Phụng, Thanh Xuân, Hà Nội</p>
+                <p>Điện thoại: (024) 3557 2999</p>
+                <p>Email: khoacntt@dainam.edu.vn</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Khoa Công nghệ Thông tin - Đại học Đại Nam</p>
+        </div>
+    </div>
+</body>
+</html>
